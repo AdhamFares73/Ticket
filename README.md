@@ -1,4 +1,4 @@
-# Task Design Screen - Angular Project
+# Ticket Design Screen - Angular Project
 
 ## Overview
 
@@ -31,12 +31,12 @@ Ensure you have the following installed:
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/your-repository/task-design-screen.git
+   git clone https://github.com/AdhamFares73/Ticket
    ```
 
 2. Navigate to the project directory:
    ```
-   cd task-design-screen
+   cd Ticket
    ```
 
 3. Install the dependencies:
