@@ -1,0 +1,58 @@
+<p-table 
+    [value]="customers"
+    [paginator]="true"
+    [rows]="20"
+    [first]="first"
+    [showCurrentPageReport]="true"
+    [tableStyle]="{ 'min-width': 'auto' , 'direction' : 'rtl'}"
+    [filterDelay]="0"
+    (onPage)="pageChange($event)"
+    [totalRecords]="120" 
+    currentPageReportTemplate="عرض {first} من اصل {last} "
+    [rowsPerPageOptions]="[10, 20, 30]"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="min-width:50px;">#</th>
+            <th style="min-width:280px">المستخدم</th>
+            <th style="min-width:100px ">رقم التذكرة</th>
+            <th style="min-width:150px"  >قيمي التذكرة <p-sortIcon pSortableColumn="ticketPrice" field="ticketPrice"> </p-sortIcon></th>
+            <th style="min-width:250px ;">السينمات</th>
+            <th style="min-width:100px">عدد الاشخاص</th>
+            <th style="min-width:100px">عدد مرات الشراء</th>
+            <th style="min-width:155px">التذكرة</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customers >
+        <tr>
+            <td>{{ customers.Id }}</td>
+            <td> 
+                <div class="flex flex-wrap-reverse"> 
+                    <span><img [src]="customers.user.img" alt="img" class="w-2rem"> </span>
+                    <span class="font-bold text-l">{{ customers.user.name }}
+                        <br>{{ customers.user.phone }}
+                    </span> 
+                </div>
+            </td>
+            <td>{{ customers.ticketNumber }}</td>
+            <td>{{ customers.ticketPrice | currency : 'USD'}}</td>
+            <td><p pTooltip="صيدناوي مول , برج العرب" tooltipPosition="top" p-tooltip-arrow	>{{ customers.cinema }}</p></td>
+            <td>{{ customers.person }}</td>
+            <td>{{ customers.numberPurchased }}</td>
+            <td>
+                
+                <div class="flex justify-content-start flex-wrap"> 
+                        <a class="mt-4 tableIcone" [href]="customers.ticket" download> <img src="../../../assets/icons/tableIcons.svg" class="mt-1" alt=""></a>
+                    <div class="font-bold border-round m-2">
+                        <p>تذكرة رقم 45.pdf</p>
+                    </div>
+                    <a class="mt-4 tableIcone" [href]="customers.ticket" download> <i class="pi pi-download mt-1"></i></a>
+                </div>
+                
+            </td>
+
+        </tr>
+    </ng-template>
+
+
+</p-table>

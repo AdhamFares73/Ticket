@@ -1,0 +1,24 @@
+
+<div id="chart" class="charts">
+
+  <div class="flex justify-content-between">
+    <div class="h-3rem p-3 ">
+        <p-dropdown [options]="time" [(ngModel)]="selectedCity"  [showClear]="false"></p-dropdown>
+    </div>
+    <div class="flex align-items-end flex-column pr-1" dir="rtl">
+      <p class="statistic">إحصائيات إستخدام القسيمة <br> <span>05 يوليو , 2023 - 05 أغسطس , 2023</span> <i class="pi pi-angle-down text-black-alpha-10 pr-1 pt-1"></i></p>
+    </div>
+  </div>
+  <apx-chart
+      [series]="chartOptions.series!"
+      [chart]="chartOptions.chart!"
+      [xaxis]="chartOptions.xaxis!"
+      [yaxis]="chartOptions.yaxis!"
+      [fill]="chartOptions.fill!"
+      [dataLabels]="chartOptions.dataLabels!"
+      [grid]="chartOptions.grid!"
+      [stroke]="chartOptions.stroke!"
+      [title]="chartOptions.title!"
+      [subtitle]="chartOptions.subtitle!"
+    ></apx-chart>
+  </div>

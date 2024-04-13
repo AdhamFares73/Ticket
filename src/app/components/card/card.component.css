@@ -1,0 +1,93 @@
+
+.coupon-card {
+    background-color: #8A74F9;
+    background-image:url("../../../assets/icons/bg-lines.svg");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin-top:15px;
+}
+
+.hover-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color:#ffffff;
+}
+
+.message {
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.hover-button:hover + .message {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.icons{
+    color:#8A74F9;
+}
+.Input[type="text"]
+{
+    font-size:18px;
+    font-weight:bold;
+}
+.button-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.line{
+    width:100%;
+    height:2px;
+    background-image:url("../../../assets/icons/line.svg");
+}
+.frame{
+box-sizing: border-box;
+border: 1px solid #FFFFFF;
+border-radius: 4px;
+
+}
+
+.pOffer{
+font-weight: 500;
+font-size: 20px;
+line-height: 18px;
+color: #FFFFFF;
+
+
+}
+.nOffer{
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 26px;
+line-height: 5px;
+color: #FFFFFF;
+}

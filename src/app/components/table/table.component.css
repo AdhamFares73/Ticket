@@ -1,0 +1,23 @@
+
+
+tr > th {
+    text-align : center;
+}
+tr > td {
+    text-align : center;
+    font-weight : bold;
+}
+
+.tableIcone{
+    background:#fff;
+    border: 1.25px solid #8A74F9;
+    border-radius:6px;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+.tableIcone > i {
+    color:#8A74F9;
+}
+
+

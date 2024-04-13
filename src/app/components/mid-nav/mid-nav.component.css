@@ -1,0 +1,20 @@
+/* مفعلة */
+
+.active{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #9C9D9F;
+
+}
+
+.button{
+    background: #8A74F9 !important;
+    width: 170px;
+    border-radius: 6px;
+}
+.arrowBtn{
+background : #fff ;
+border : 1px sold #bcbcbc;
+border-radius:2px;
+}

@@ -1,0 +1,32 @@
+<div class="flex justify-content-between flex-wrap md:flex-row flex-column">
+
+    <div class="flex align-items-center justify-content-center  font-bold border-round ">
+        <div class="flex flex-row flex-wrap">
+            <div class="flex align-items-center justify-content-center">
+                <p-button [outlined]="true"  class="button">
+                    <span class="font-bold text-white mr-2">حجز تذكرة جديدة</span>
+                  </p-button>
+            </div>            
+            <div class="flex align-items-center justify-content-center w-4rem h-4rem  font-bold border-round ml-7">
+                <p class="active">مفعلة</p>
+                <p-inputSwitch [(ngModel)]="checked" class="mt-2 ml-2"></p-inputSwitch>
+            </div>
+        </div>
+    </div>
+
+    <div class=" flex align-items-center justify-content-center  font-bold border-round m-2">
+        <button class="arrowBtn border-transparent border-round mr-2 h-3rem cursor-pointer">
+            <i class="pi pi-arrow-up text-black-alpha-40"></i>
+            <i class="pi pi-arrow-down text-black-alpha-40"></i>
+        </button>
+        <button class="arrowBtn border-transparent border-round mr-2 h-3rem cursor-pointer">
+            <img src="../../../assets/icons/icons.svg" alt="icons" class="w-2rem">
+        </button>
+        <span class="p-input-icon-right mr-5 ">
+            <input type="text" pInputText [(ngModel)]="value" placeholder="بحث عن . . ." dir="rtl" />
+            <i class="pi pi-search"></i>
+        </span>
+        <p>مبيعات التذكرة </p>
+        
+    </div>
+</div>
